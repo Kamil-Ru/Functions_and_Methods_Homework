@@ -31,6 +31,8 @@ else:
 import string
 
 def ispangram(str1, alphabet=set(string.ascii_lowercase)):
+
+    # remove any space from string, lowercase, convert too set and grab all uniques letters
     str2 = set(str1.replace(' ','').lower())
 
     if alphabet.issubset(str2):
